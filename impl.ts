@@ -60,15 +60,12 @@ export class GaugeInfo implements kson.GaugeInfo {
 
 export class NoteInfo implements kson.NoteInfo {
   bt?: [
-    y: Pulse[] | kson.ButtonNote[],
-    y: Pulse[] | kson.ButtonNote[],
-    y: Pulse[] | kson.ButtonNote[],
-    y: Pulse[] | kson.ButtonNote[]
+    (Pulse | kson.ButtonNote)[],
+    (Pulse | kson.ButtonNote)[],
+    (Pulse | kson.ButtonNote)[],
+    (Pulse | kson.ButtonNote)[]
   ] = [[], [], [], []];
-  fx?: [y: Pulse[] | kson.ButtonNote[], y: Pulse[] | kson.ButtonNote[]] = [
-    [],
-    [],
-  ];
+  fx?: [(Pulse | kson.ButtonNote)[], (Pulse | kson.ButtonNote)[]] = [[], []];
   laser?: [kson.LaserSection[], kson.LaserSection[]] = [[], []];
 }
 

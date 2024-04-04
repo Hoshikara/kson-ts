@@ -57,12 +57,12 @@ export type LaserSection = [y: Pulse, v: GraphSectionPoint[], w: uint];
 
 export interface NoteInfo {
   bt?: [
-    y: Pulse[] | ButtonNote[],
-    y: Pulse[] | ButtonNote[],
-    y: Pulse[] | ButtonNote[],
-    y: Pulse[] | ButtonNote[]
+    (Pulse | ButtonNote)[],
+    (Pulse | ButtonNote)[],
+    (Pulse | ButtonNote)[],
+    (Pulse | ButtonNote)[]
   ];
-  fx?: [y: Pulse[] | ButtonNote[], y: Pulse[] | ButtonNote[]];
+  fx?: [(Pulse | ButtonNote)[], (Pulse | ButtonNote)[]];
   laser?: [LaserSection[], LaserSection[]];
 }
 
