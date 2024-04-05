@@ -38,7 +38,7 @@ export interface MetaInfo {
 
 // https://github.com/kshootmania/ksm-chart-format/blob/master/kson_format.md#beat
 export interface BeatInfo {
-  bpm: ByPulse<Pulse>[];
+  bpm: ByPulse<number>[];
   time_sig: ByMeasureIdx<TimeSig>[];
   scroll_speed: GraphPoint[];
 }

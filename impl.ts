@@ -49,7 +49,7 @@ export class MetaInfo implements kson.MetaInfo {
 }
 
 export class BeatInfo implements kson.BeatInfo {
-  bpm: kson.ByPulse<Pulse>[] = [];
+  bpm: kson.ByPulse<number>[] = [];
   time_sig: kson.ByMeasureIdx<kson.TimeSig>[] = [[0, [4, 4]]];
   scroll_speed: kson.GraphPoint[] = [[0, [1.0, 1.0], [0.0, 0.0]]];
 }
